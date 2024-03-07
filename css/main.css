@@ -294,6 +294,7 @@ ul li {
 .banner {
 	background-color: #8C274C;
 	min-height: 100vh;
+
 }
 .banner-text {
 	padding-top: 15%;
@@ -301,20 +302,24 @@ ul li {
 }
 .banner-text h1 {
 	color: #fff;
-	font-family: "Roboto Slab", sans-serif;
+	font-family: "Roboto Slab";
 	font-size: 110px;
 	font-weight: 700;
+	transform: translate(-5%,0%);
 }
 
 .profile-picture {
     float: right; /* Make the image float to the right */
 	margin-left: 20px;
-	margin-right: 20px;
+	margin-right: 55px;
 	width: 255px; 
 	height: 255px;
 	margin-top: -155px;
 	border-radius: 50%;
-	border: 3px solid white
+    border: 3px solid transparent; /* Set initial border color to transparent */
+    box-shadow: 0 0 0 3px white; /* Create a white box-shadow */
+    transition: box-shadow 0.3s ease;
+	
 
 }
 
@@ -323,15 +328,17 @@ ul li {
     font-size: 28px; 
 	justify-content: center; /* Centering horizontally */
     line-height: 1.5; 
+	transform: translate(-5%,0%);
 }
 .description {
 	color: #2b2a2a;
-	font-size: 22px;
+	font-size: 24px;
 	justify-content: center;
 	font-weight: 350;
 	letter-spacing: 3px;
 	line-height: 27px;
 	margin-top: 40px;
+	transform: translate(-5%,0%);
 	margin-bottom: 80px;
 	text-align: left;
 	max-width: 100%;
