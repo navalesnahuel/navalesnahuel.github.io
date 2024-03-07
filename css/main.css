@@ -305,7 +305,7 @@ ul li {
 .banner-text h1 {
 	color: #fff;
 	font-family: "Roboto Slab";
-	font-size: 110px;
+	font-size: 114px;
 	font-weight: 700;
 	transform: translate(-5%,0%);
 }
@@ -313,7 +313,7 @@ ul li {
 .profile-picture {
     float: right; /* Make the image float to the right */
 	margin-left: 20px;
-	margin-right: 58px;
+	margin-right: 69px;
 	width: 255px; 
 	height: 255px;
 	margin-top: -155px;
@@ -321,7 +321,6 @@ ul li {
     border: 3px solid transparent; /* Set initial border color to transparent */
     box-shadow: 0 0 0 3px white; /* Create a white box-shadow */
     transition: box-shadow 0.3s ease;
-	
 
 }
 
@@ -332,9 +331,10 @@ ul li {
     line-height: 1.5; 
 	transform: translate(-5%,0%);
 }
+
 .description {
 	color: #2b2a2a;
-	font-size: 23px;
+	font-size: 22px;
 	justify-content: center;
 	font-weight: 350;
 	letter-spacing: 3px;
