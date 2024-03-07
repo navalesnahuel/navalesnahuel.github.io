@@ -1,5 +1,7 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700);
-@import url(http://fonts.googleapis.com/css?family=Roboto%20Slab:300,400,500,600,700);
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('/fonts/RobotoSlab-VariableFont_wght.ttf') format('truetype'); /* Replace 'path_to_your_font_file.ttf' with the actual path */
+}
 
 p {
 	font-size: 14px;
@@ -311,7 +313,7 @@ ul li {
 .profile-picture {
     float: right; /* Make the image float to the right */
 	margin-left: 20px;
-	margin-right: 55px;
+	margin-right: 58px;
 	width: 255px; 
 	height: 255px;
 	margin-top: -155px;
@@ -332,7 +334,7 @@ ul li {
 }
 .description {
 	color: #2b2a2a;
-	font-size: 24px;
+	font-size: 23px;
 	justify-content: center;
 	font-weight: 350;
 	letter-spacing: 3px;
