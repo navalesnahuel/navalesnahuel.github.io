@@ -302,8 +302,7 @@ ul li {
 .banner-text h1 {
 	color: #fff;
 	font-family: "Roboto Slab", sans-serif;
-	justify-content: center; /* Centering horizontally */
-	font-size: 122px;
+	font-size: 110px;
 	font-weight: 700;
 }
 
@@ -327,7 +326,7 @@ ul li {
 }
 .description {
 	color: #2b2a2a;
-	font-size: 24px;
+	font-size: 22px;
 	justify-content: center;
 	font-weight: 350;
 	letter-spacing: 3px;
