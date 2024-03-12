@@ -13,7 +13,7 @@
 <title>Nahuel Navales - Projects</title>
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/jquery.fancybox.css">
-<link rel="stylesheet" href="css/projects.css">
+<link rel="stylesheet" type="text/css" href="css/projects.css">
 <link rel="stylesheet" href="css/responsive.css">
 <link rel="stylesheet" href="css/animate.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -22,6 +22,29 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <!-- Add Slick theme CSS (optional) -->
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+<style>
+    /* Custom CSS for Slick Carousel */
+    .slick-dots li button::before {
+        /* Increase the font size of dots */
+        font-size: 15px; /* Adjust the size as needed */
+        margin-top: 10px;
+    }
+
+        /* Custom CSS for Slick Carousel */
+    .slick-dots li button {
+      /* Set initial opacity for all dots */
+      opacity: 1;
+      transition: opacity 0.3s ease; /* Add transition effect */
+    }
+
+    /* Style for active dot */
+    .slick-dots li.slick-active button {
+      /* Make the active dot fully opaque */
+      opacity: 1;
+    }
+
+</style>
 
 </head>
 
@@ -43,18 +66,15 @@
   </header>
 <!-- header section -->
 
-<section id="portfolio" class="portfolio section">
-  <div class="container">
-    <h2 class="section-title">Portfolio</h2> <!-- This is outside any row or column -->
-    <div class="row">
-      <!-- Portfolio items will be dynamically added here -->
-    </div>
-  </div>
-</section>
+<div class="projects">
+  <section id="portfolio" class="portfolio section">
+    <h2 class="section-title">PROJECTS</h2> <!-- This is outside any row or column -->
+  </section>
 
-<div class="portfolio-carousel">
-  <!-- Portfolio items will be dynamically added here -->
-</div>
+  <div class="portfolio-carousel">
+    <!-- Portfolio items will be dynamically added here -->
+  </div>
+
 
 <!-- hire me section -->
 <section id="hireme" class="section hireme">
