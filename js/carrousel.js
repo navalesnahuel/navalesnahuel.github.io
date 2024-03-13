@@ -1,5 +1,6 @@
 // Sample portfolio data (you would fetch this from your backend)
 var portfolioData = [
+    { imageUrl: 'images/projects/elt.png', name: 'Data Pipeline ELT', redirectUrl: 'https://github.com/navalesnahuel/ELT-Pipeline-Bedsheets' },
     { imageUrl: 'images/projects/DataPipeline.png', name: 'Data Pipeline', redirectUrl: 'https://medium.com/@navalesnahuel/pipeline-project-for-you-building-a-crypto-data-pipeline-4c7652cd2eba' },
     { imageUrl: 'images/projects/MITRON BANK.png', name: 'Mitron Bank',  redirectUrl: 'https://medium.com/@navalesnahuel/mitron-bank-data-analysis-5b02f2dcc9e0' },
     { imageUrl: 'images/projects/AZURE.png', name: 'Azure Pipeline', redirectUrl: 'https://medium.com/@navalesnahuel/olympic-data-engineering-and-analysis-using-azure-services-fdd0f4a33433' },
@@ -7,7 +8,6 @@ var portfolioData = [
     { imageUrl: 'images/projects/EXCEL.png', name: 'Data Transformation', redirectUrl: 'https://github.com/navalesnahuel/reformulate-data' },
     { imageUrl: 'images/projects/realstate.png', name: 'Real State',  redirectUrl: 'https://medium.com/@navalesnahuel/property-data-scraping-cleaning-analysis-and-visualization-using-python-sql-and-power-bi-cec4a29c08f0' },
     { imageUrl: 'images/projects/Ecommerce.png', name: 'E-Commerce', redirectUrl: 'https://medium.com/@navalesnahuel/commerce-analysis-2048621c3417' },
-    { imageUrl: 'images/projects/Scrapping.png', name: 'Web-Scrapping',  redirectUrl: 'https://medium.com/@navalesnahuel/scraping-data-from-wikipedia-using-python-3af11679ccc8' },
     { imageUrl: 'images/projects/datacleaning.png', name: 'Data Cleaning',  redirectUrl: 'https://medium.com/@navalesnahuel/mastering-data-cleaning-unveiling-insights-from-consumption-datasets-d8fc1b9ab006' },
     { imageUrl: 'images/projects/spotifyanalysis.png', name: 'Spotify Analysis',  redirectUrl: 'https://medium.com/@navalesnahuel/unveiling-insights-from-spotify-data-a-data-cleaning-and-exploratory-analysisdata-cleaning-and-eda-62514f4b44d5' },
     { imageUrl: 'images/projects/shopping trends.png', name: 'Shopping Trends',  redirectUrl: 'https://medium.com/@navalesnahuel/unveiling-shopping-trends-a-data-analysis-perspective-9479b8746d01' },
