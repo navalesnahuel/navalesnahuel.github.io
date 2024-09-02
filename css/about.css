@@ -1,0 +1,166 @@
+.main-content {
+    max-width: 100%; /* Ajusta el ancho máximo según tus necesidades */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 20px;
+}
+
+.text-content {
+    flex-direction: column; /* Alinea los elementos en una columna */
+    text-align: center; /* Alinea el texto al centro dentro de los elementos */
+}
+
+.wrapper h1 {
+
+}
+
+.text-content, .bio, .personal-info {
+    text-align: center; /* Centra el texto dentro de estos contenedores */
+    margin: 0 auto; /* Centra los elementos si tienen un ancho fijo */
+}
+
+.personal-info .copy-text {
+    cursor: pointer;
+    text-decoration: none !important;
+    color: #333333;
+}
+
+.personal-info .copy-text:hover{
+    cursor: pointer;
+    text-decoration: none !important;
+    color: #333333;
+}
+
+
+.personal-info .copy-text:active {
+    color: var(--primary-text-color); /* Mantén el mismo color, o quita esta regla */
+    text-decoration: none !important;
+}
+
+.copy-notification {
+    position: fixed;
+    top: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primary-text-color);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0; /* Comienza con la notificación invisible */
+    z-index: 1000;
+    font-family: var(--font-family);
+    font-size: 12px;
+    white-space: nowrap;
+    transition: opacity 0.5s ease-in-out; /* Transición para el efecto de fade */
+}
+
+.copy-notification.show {
+    opacity: 1; /* Muestra la notificación con un efecto de fade */
+}
+.text-content span {
+    font-size: 16px;
+    font-family: var(--font-family);
+    color: var(--secondary-text-color);
+}
+
+.cv-link {
+    text-decoration: none !important;
+}
+
+.cv-link a {
+    color: var(--primary-text-color); /* Color del enlace */
+    text-decoration: none !important;
+    font-size: 14px; /* Tamaño de fuente */
+}
+
+.cv-link a:hover {
+    color: var(--primary-text-color); /* Color del enlace al pasar el ratón */
+    text-decoration: none !important;
+}
+
+.bio {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row; /* Asegura que la imagen esté a la izquierda y la descripción a la derecha */
+    align-items: flex-start; /* Alinea los elementos al principio */
+    margin-bottom: 20px;
+    max-width: 70%;
+}
+
+.bio img {
+    border-radius: 50%;
+    width: 175px; /* Ajusta el tamaño de la foto de perfil según sea necesario */
+    height: 175px; /* Ajusta el tamaño de la foto de perfil según sea necesario */
+    object-fit: cover;
+    margin-right: 20px; /* Espacio entre la foto de perfil y la biografía */
+    margin-top: 20px;
+    border: 5px solid var(--border-color); /* Borde alrededor de la imagen */
+}
+
+.bio .description {
+    flex: 1; /* Permite que la biografía ocupe el espacio restante */
+    text-align: left;
+    font-family: var(--font-family);
+    font-size: 18px;
+    color: var(--primary-text-color);
+}
+
+.personal-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas para pantallas grandes */
+    gap: 20px;
+    width: 70%; /* Asegura que la personal-info ocupe todo el ancho disponible */
+    font-family: var(--font-family);
+    text-decoration: none !important;
+    font-size: 14px;
+}
+
+.personal-info div {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-decoration: none !important;
+    text-align: center;
+}
+
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .main-content {
+        padding: 15px; /* Reduce el padding para pantallas más pequeñas */
+    }
+    .text-content span {
+        font-size: 12px;
+        font-family: var(--font-family);
+        color: var(--secondary-text-color);
+    
+    }
+    
+    .text-content {
+        padding: 10px; /* Ajusta el padding para mejor ajuste en pantallas pequeñas */
+    }
+
+    .bio {
+        flex-direction: column; /* Apila la imagen y la descripción en columnas en lugar de filas */
+        align-items: center; /* Centra los elementos verticalmente */
+        max-width: 100%; /* Asegura que la biografía ocupe todo el ancho disponible */
+    }
+
+    .bio img {
+        display: none;
+    }
+
+    .bio .description {
+        text-align: center; /* Centra el texto de la biografía */
+        font-size: 13px; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+    }
+
+    .personal-info {
+        display: none;
+    }
+
+    .personal-info div {
+        padding: 8px; /* Ajusta el padding para pantallas pequeñas */
+        font-size: 12px; /* Reduce el tamaño de la fuente para pantallas pequeñas */
+    }
+}

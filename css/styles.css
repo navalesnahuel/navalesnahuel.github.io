@@ -1,0 +1,313 @@
+@import url('variables.css');
+
+body {
+    font-family: var(--font-family);
+    padding: 0;
+    background-color: var(--background-color); /* Fondo blanco para toda la página */
+    display: flex;
+    box-sizing: border-box;
+    margin: 0 auto; /* Centra el main horizontalmente */
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos toda la altura de la ventana */
+    max-height: 100vh;
+
+}
+
+body.loaded header nav{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+header nav{
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+main {
+    flex: 1; /* Esto permite que el main ocupe todo el espacio vertical disponible */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    border-left: 25px solid var(--border-color); /* Borde izquierdo, rojo por ejemplo */
+    border-right: 25px solid var(--border-color); /* Borde derecho, verde por ejemplo */
+}
+
+/* Header */
+
+header{
+    width: 100vw;
+    border-top: 25px solid var(--border-color);
+    border-left: 25px solid var(--border-color); /* Borde izquierdo, rojo por ejemplo */
+    border-right: 25px solid var(--border-color); /* Borde derecho, verde por ejemplo */
+    box-sizing: border-box;
+    height: 100%;
+    padding-top: 25px; /* Igual al grosor del borde para mantener el espacio constante */
+    
+
+}
+
+header .inner {
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    display: flex; /* Usamos flexbox para posicionar el contenido */
+    justify-content: flex-end; /* Alinea el nav a la derecha */
+    padding-right: 15px; /* Espacio igual al margen del footer */
+    box-sizing: border-box;
+}
+
+
+header nav{
+    height: 100%;
+    font-size: 18px;
+    letter-spacing: 0;
+    font-weight: 400;
+    font-family: var(--font-family);
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos dentro del nav */
+    margin-right: 15px;
+}
+
+header nav li{
+    display: table;
+    height: 100%;
+    float: left;
+    margin-right: 30px;
+}
+
+header nav li:last-of-type{
+    margin-right: 0;
+}
+
+header nav span {
+    display: table-cell;
+    vertical-align: middle;
+    text-decoration: none; /* Quita la subrayado de los enlaces */
+    color: inherit; /* Mantiene el color del texto */
+}
+
+header nav a{
+    color: var(--primary-text-color);
+
+}
+
+header nav a:hover {
+    color: var(--primary-text-color);
+    border-bottom: none; /* Eliminar la línea de separación */
+    text-decoration: none; /* Quita la subrayado de los enlaces */
+}
+
+/* Footer */
+
+footer {
+    border-bottom: 25px solid var(--border-color);
+    border-left: 25px solid var(--border-color); /* Borde izquierdo, rojo por ejemplo */
+    border-right: 25px solid var(--border-color); /* Borde derecho, verde por ejemplo */
+    width: 100%;
+
+}
+
+.footer-content {
+    background-color: var(--background-color);
+    color: var(--primary-text-color);
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+
+}
+
+.social-links a{
+	background: var(--primary-text-color);
+	border-radius: 14%;
+	color: var(--background-color);
+	width: 40px; /* Increased width for bigger logos */
+	height: 40px; /* Increased height for bigger logos */
+	line-height: 40px; /* Match line-height with the height of the icons */
+	text-align: center; /* Center content horizontally */
+	font-size: 24px; /* Increased font size for larger content */
+	margin: 0 5px; /* Added some margin between icons */
+	display: inline-flex; /* Changed to inline-flex for better alignment */
+	justify-content: center; /* Centering horizontally */
+	align-items: center; /* Centering vertically */
+	transition: all 0.5s ease;
+    text-decoration: none; /* Quita la subrayado de los enlaces */
+    margin-bottom: 15px; /* Mueve los íconos hacia arriba */
+
+}
+
+.social-links {
+    display: flex;
+    justify-content: flex-end; /* Mueve las redes sociales hacia la derecha */
+    margin-right: 15px;
+    gap: 14px;
+}
+.social-links a:hover{
+	color: #24262b;
+	background-color: var(--background-color);
+}
+
+header nav a {
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+header nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-text-color);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: bottom right;
+}
+
+header nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.footer-content {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.7s ease-out forwards;
+}
+
+body.loaded .footer-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Define la animación de desvanecimiento */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Aplica la animación al contenedor principal */
+.main-content {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    opacity: 0; /* Comienza con el contenedor invisible */
+    animation: fadeIn 0.7s ease-out forwards; /* Aplica la animación */
+}
+
+
+.mobile-header {
+    background-color: var(--background-color); /* Color de fondo */
+    border-bottom: 1px solid var(--border-color); /* Línea inferior */
+    padding: 10px;
+    display: none; /* Oculta el header por defecto */
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Asegura que el mobile-header ocupe todo el ancho */
+}
+
+/* Media Queries */
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    header {
+        display: none; /* Oculta el header principal en pantallas móviles */
+    }
+
+    .mobile-header {
+        display: flex; /* Muestra el mobile-header en pantallas móviles */
+        flex-direction: column; /* Alinea el contenido en una columna */
+        justify-content: center; /* Centra el contenido verticalmente */
+        align-items: center; /* Alinea el contenido horizontalmente */
+    }
+
+    .mobile-header nav {
+        display: flex; /* Muestra el menú en pantallas móviles */
+        justify-content: center; /* Centra los íconos horizontalmente */
+        align-items: center; /* Alinea los íconos verticalmente */
+        padding: 0; /* Elimina padding innecesario */
+        background-color: var(--background-color); /* Fondo del menú */
+        border-bottom: none; /* Opcional: Elimina la línea inferior si no se desea */
+        width: 100%; /* Asegura que el nav ocupe todo el ancho */
+    }
+
+    .mobile-header .nav-icons {
+        list-style: none; /* Elimina puntos de la lista */
+        display: flex; /* Asegura que los íconos estén en una fila */
+        justify-content: center; /* Centra los íconos horizontalmente */
+        align-items: center; /* Alinea los íconos verticalmente */
+        padding: 0;
+        margin: 0;
+        width: 100%; /* Asegura que el menú ocupe todo el ancho */
+    }
+
+    .mobile-header .nav-icons li {
+        margin: 0 10px; /* Espacio entre los íconos */
+    }
+
+    .mobile-header .nav-icons a {
+        text-decoration: none; /* Sin subrayado */
+        color: var(--primary-text-color); /* Color de los íconos */
+        font-size: 24px; /* Tamaño de los íconos */
+        display: block; /* Asegura que el enlace ocupe el espacio del elemento de lista */
+        padding: 5px 10px; /* Espacio alrededor del ícono */
+    }
+
+    .mobile-header .nav-icons a:hover {
+        color: var(--highlight-color); /* Color al hacer hover */
+    }
+
+
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center; /* Centra el contenido del footer horizontalmente */
+        align-items: center; /* Alinea los íconos verticalmente en el centro */
+        padding: 10px; /* Ajusta el padding para pantallas más pequeñas */
+        width: 100%;
+        bottom: 0; /* Alinea el footer al fondo de la pantalla */
+        left: 0; /* Alinea el footer al borde izquierdo de la pantalla */
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column; /* Alinea los elementos verticalmente si es necesario */
+        align-items: center; /* Centra el contenido horizontalmente */
+        text-align: center;
+        width: 100%;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center; /* Centra los íconos horizontalmente */
+        gap: 10px; /* Espacio entre los íconos */
+        margin-top: 10px; /* Agrega margen superior para separación */
+        margin-left: 7px;
+    }
+
+    .social-links a {
+        width: 30px; /* Tamaño de los íconos */
+        height: 30px; /* Tamaño de los íconos */
+        font-size: 18px; /* Tamaño de la fuente */
+        display: flex;
+        justify-content: center; /* Centra el contenido del ícono horizontalmente */
+        align-items: center; /* Centra el contenido del ícono verticalmente */
+    }
+}

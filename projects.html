@@ -1,133 +1,229 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="">
-<!--<![endif]-->
 
 <head>
-<meta charset="utf-8">
-<meta name="description" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Nahuel Navales - Projects</title>
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/jquery.fancybox.css">
-<link rel="stylesheet" type="text/css" href="css/projects.css">
-<link rel="stylesheet" href="css/responsive.css">
-<link rel="stylesheet" href="css/animate.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- This is the style for the header -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/projects.css">
+    <link rel="stylesheet" href="css/cchange.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Nahuel Navales - Portafolio</title>
 
-<!-- Add Slick Carousel CSS -->
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<!-- Add Slick theme CSS (optional) -->
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  </head>
+  <body>
 
-<style>
-    /* Custom CSS for Slick Carousel */
-    .slick-dots li button::before {
-        /* Increase the font size of dots */
-        font-size: 15px; /* Adjust the size as needed */
-        margin-top: 10px;
-    }
-
-        /* Custom CSS for Slick Carousel */
-    .slick-dots li button {
-      /* Set initial opacity for all dots */
-      opacity: 1;
-      transition: opacity 0.3s ease; /* Add transition effect */
-    }
-
-    /* Style for active dot */
-    .slick-dots li.slick-active button {
-      /* Make the active dot fully opaque */
-      opacity: 1;
-    }
-
-</style>
-
-</head>
-
-<body>
-
-<!-- header section -->
-<section class="banner" role="banner">
-  <header id="header">
-      <div class="header-content clearfix">
-          <a class="logo" href="index.html"><img src="images/logo.png" alt="Mafolio" style="width: 77px; height: auto;"></a> <!-- Adjust the width as needed -->
-          <nav class="navigation" role="navigation">
-              <ul class="primary-nav">
-                  <li><a href="index.html">About Me</a></li>
-                  <li><a href="skills.html">Skills</a></li>
-              </ul>
-          </nav>
-          <a href="#" class="nav-toggle">Menu<span></span></a>
-      </div>
-  </header>
-<!-- header section -->
-
-<div class="projects">
-  <section id="portfolio" class="portfolio section">
-    <h2 class="section-title">PROJECTS</h2> <!-- This is outside any row or column -->
-  </section>
-
-  <div class="portfolio-carousel">
-    <!-- Portfolio items will be dynamically added here -->
-  </div>
-
-
-<!-- hire me section -->
-<section id="hireme" class="section hireme">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2 text-center">
-        <h3>GET MY CURRICULUM</h3>
+    <header class="mobile-header">
+                <ul class="nav-icons">
+                    <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+                    <li><a href="about.html"><i class="fas fa-user"></i></a></li>
+                    <li><a href="skills.html"><i class="fas fa-bolt"></i></a></li>
+                </ul>
         </div>
-        <div class="download-buttons">
-          <a href="pdfs/Curriculum-NahuelNavales.pdf" class="btn btn-large">Download Resume (English)</a>
-          <a href="pdfs/Resume-NahuelNavales.pdf" class="btn btn-large">Descargar Currículum (Español)</a>
+    </header>
+
+
+
+    <!-- Start of the header -->
+    <header>
+        <div class="inner">
+            <nav>
+                <li><span><a href="index.html">INICIO</a></span></li>
+                <li><span><a href="about.html">ACERCA DE MI</a></span></li>
+                <li><span><a href="skills.html">HABILIDADES</a></span></li>
+            </nav>
         </div>
-      </div>
+    </header>
+
+
+
+    <main>
+        <div class="main-content">
+        <div class="text-content">
+            <div class="wrapper">
+                <h1>PORTAFOLIO</h1>
+              </div>
+            <span id="typed"></span>
+        </div>
+        <section class="projects-grid">
+            <!-- Repite esta estructura para cada proyecto -->
+            <a href="https://medium.com/@navalesnahuel/mitron-bank-data-analysis-5b02f2dcc9e0" class="project-item">
+                <div>
+                    <h3 class="project-title">Banco Mitron</h3>
+                    <p class="project-description">Análisis de Datos de Clientes para una Campaña de Tarjetas de Crédito.</p>
+                    <div class="project-tools">
+                        <span>Pandas</span>
+                        <span>SQL</span>
+                        <span>Power BI</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://github.com/navalesnahuel/desafios-data-analisis" class="project-item">
+                <div>
+                    <h3 class="project-title">Retail Analisis</h3>
+                    <p class="project-description">Limpieza, exploración y modelado de datos para analizar patrones clave y comportamientos.</p>
+                    <div class="project-tools">
+                        <span>MinIO</span>
+                        <span>Spark</span>
+                        <span>Hive</span>
+                        <span>Power BI</span>
+                        <span>Jupyter</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://github.com/navalesnahuel/desafios-data-engineer" class="project-item">
+                <div>
+                    <h3 class="project-title">Flujo de Datos</h3>
+                    <p class="project-description">Domina el ciclo de vida de los datos con este proyecto práctico.</p>
+                    <div class="project-tools">
+                        <span>Spark</span>
+                        <span>MinIO</span>
+                        <span>Airflow</span>
+                        <span>Delta Lake</span>
+                        <span>Tableau</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://github.com/navalesnahuel/ELT-Pipeline-Bedsheets" class="project-item">
+                <div>
+                    <h3 class="project-title">Blanqueria</h3>
+                    <p class="project-description">Proceso de creación de una database para blanqueria y un pipeline ELT sobre la misma</p>
+                    <div class="project-tools">
+                        <span>GCP</span>
+                        <span>Postgres</span>
+                        <span>Airflow</span>
+                        <span>DBT</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://medium.com/@navalesnahuel/commerce-analysis-2048621c3417" class="project-item">
+                <div>
+                    <h3 class="project-title">E-Commerce</h3>
+                    <p class="project-description">Análisis exhaustivo de datos de transacciones de comercio electrónico para comprende las tendencias de ventas.</p>
+                    <div class="project-tools">
+                        <span>Pandas</span>
+                        <span>SQL</span>
+                        <span>Power BI</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://medium.com/@navalesnahuel/pipeline-project-for-you-building-a-crypto-data-pipeline-4c7652cd2eba" class="project-item">
+                <div>
+                    <h3 class="project-title">Crypto Pipeline</h3>
+                    <p class="project-description">Pipeline automatizado para extraer, transformar y cargar datos de criptomonedas en un almacén de datos.</p>
+                    <div class="project-tools">
+                        <span>Airflow</span>
+                        <span>GCP</span>
+                        <span>Spark</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://medium.com/@navalesnahuel/olympic-data-engineering-and-analysis-using-azure-services-fdd0f4a33433" class="project-item">
+                <div>
+                    <h3 class="project-title">Olimpiadas</h3>
+                    <p class="project-description">Transformación de datos crudos hasta consultas SQL detalladas.</p>
+                    <div class="project-tools">
+                        <span>Azure</span>
+                        <span>Data Factory</span>
+                        <span>Databricks</span>
+                        <span>Synapse</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://medium.com/@navalesnahuel/amazon-sales-report-analysis-8abccb8cba46" class="project-item">
+                <div>
+                    <h3 class="project-title">Reporte Amazon</h3>
+                    <p class="project-description">Análisis de datos de ventas de Amazon para proporcionar insights para la toma de decisiones estratégicas.</p>
+                    <div class="project-tools">
+                        <span>Pandas</span>
+                        <span>SQL</span>
+                        <span>Power BI</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://medium.com/@navalesnahuel/property-data-scraping-cleaning-analysis-and-visualization-using-python-sql-and-power-bi-cec4a29c08f0" class="project-item">
+                <div>
+                    <h3 class="project-title">Inmuebles Scrapping</h3>
+                    <p class="project-description">Extracción, limpieza, análisis de datos de propiedades para identificar tendencias</p>
+                    <div class="project-tools">
+                        <span>Scrapping</span>
+                        <span>Pandas</span>
+                        <span>SQL</span>
+                        <span>Power BI</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://medium.com/@navalesnahuel/unveiling-shopping-trends-a-data-analysis-perspective-9479b8746d01" class="project-item">
+                <div>
+                    <h3 class="project-title">Tendencias</h3>
+                    <p class="project-description">Análisis de tendencias de compra para identificar patrones de comportamiento del consumidor y preferencias</p>
+                    <div class="project-tools">
+                        <span>Pandas</span>
+                        <span>Python</span>
+                        <span>Jupyter</span>
+                    </div>
+                </div> <!-- Aquí falta el cierre del div -->
+            </a> <!-- Aquí el <a> está bien cerrado -->
+        </section>
+    </main>
+    
+
+
+<!-- Start of the Footer -->
+<footer> 
+    <div class="footer-content">
+    <div class="social-links">
+        <a href="https://x.com/nahuinavales"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/navalesnahuel/"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/navalesnahuel"><i class="fab fa-github"></i></a>
+        <a href="https://medium.com/@navalesnahuel"><i class="fab fa-medium"></i></a>
     </div>
-  </div>
-</section>
+</div>
+</div>
+</footer>
+    
+    <script src="js/copy.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            new Typed('#typed', {
+                strings: [
+                "Mis Proyectos", // Español
+                "My Projects", // Inglés
+                "Mes Projets", // Francés
+                "Meine Projekte", // Alemán
+                "I Miei Progetti", // Italiano
+                "Meus Projetos", // Portugués
+                "Mijn Projecten", // Holandés
+                "我的项目", // Chino (Simplificado)
+                "Мои Проекты", // Ruso
+                "مشاريعي" // Árabe
+            ],
+                typeSpeed: 50, // Velocidad de escritura en ms
+                backSpeed: 12, // Velocidad de borrado en ms
+                backDelay: 1000, // Retraso antes de borrar
+                startDelay: 500, // Retraso antes de iniciar la animación
+                loop: true // Hacer que la animación se repita
+            });
+        });
+        </script>
 
-<footer class="section footer">
-  <div class="footer-bottom">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <p style="font-size: 30px; letter-spacing: 7px; font-weight: 200;">CONTACT</p>
-          <br>
-          <p>navalesnahuel@gmail.com<br>
-              +54 11-6761-9266</p>
-          <ul class="footer-share">
-            <li><a href="https://www.linkedin.com/in/navalesnahuel/"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="https://github.com/navalesnahuel"><i class="fa fa-github"></i></a></li>
-            <li><a href="https://medium.com/@navalesnahuel"><i class="fa fa-medium"></i></a></li>
-          </ul>
-          <br>
-          <p>Navales Nahuel</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>  
-<!-- footer --> 
-
-<!-- JS FILES --> 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
-<script src="js/bootstrap.min.js"></script> 
-<script src="js/jquery.fancybox.pack.js"></script> 
-<script src="js/jquery.waypoints.min.js"></script> 
-<script src="js/retina.min.js"></script> 
-<script src="js/modernizr.js"></script> 
-<script src="js/main.js"></script>
-
-<!-- Add Slick Carousel JavaScript -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<!-- Initialize Slick Carousel -->
-<script src="js/carrousel.js"></script>
+        <script>
+            window.addEventListener('load', () => {
+                document.body.classList.add('loaded');
+                document.querySelector('.mobile-header').classList.add('loaded');
+            });
+        </script>
 
 </body>
 </html>
