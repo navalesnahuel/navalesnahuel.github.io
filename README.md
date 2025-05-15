@@ -1,5 +1,2 @@
-# Todo
-- Icono
-- Mejorar el cv
-- Cargar el cv 
-
+# Nahuel Navales Portfolio
+the best :)
