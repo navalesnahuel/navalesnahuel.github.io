@@ -214,16 +214,26 @@
         >
             <nav class="flex flex-col space-y-2">
                 {#each navItems as item (item.name)}
-                    <button
-                        on:click={() => scrollToId(item.idTarget)}
-                        class="block w-full text-left px-3 py-2.5 rounded-md text-base font-medium focus:outline-none hover:text-secondary"
-                        class:text-secondary={activeSection === item.idTarget}
-                        class:bg-secondary_div_10_mobile_placeholder={activeSection ===
-                            item.idTarget}
-                        class:text-primary={activeSection !== item.idTarget}
-                    >
-                        {item.name}
-                    </button>
+                    {#if item.href.startsWith("#")}
+                        <button
+                            on:click={() => scrollToId(item.idTarget)}
+                            class="block w-full text-left px-3 py-2.5 rounded-md text-base font-medium focus:outline-none hover:text-secondary"
+                            class:text-secondary={activeSection ===
+                                item.idTarget}
+                            class:bg-secondary_div_10_mobile_placeholder={activeSection ===
+                                item.idTarget}
+                            class:text-primary={activeSection !== item.idTarget}
+                        >
+                            {item.name}
+                        </button>
+                    {:else}
+                        <a
+                            href={item.href}
+                            class="block w-full text-left px-3 py-2.5 rounded-md text-base font-medium text-primary focus:outline-none hover:text-secondary"
+                        >
+                            {item.name}
+                        </a>
+                    {/if}
                 {/each}
             </nav>
         </div>
