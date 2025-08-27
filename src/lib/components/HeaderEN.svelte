@@ -11,10 +11,10 @@
     }
 
     const navItems: NavItem[] = [
-        { name: "Habilidades", href: "#skills", idTarget: "skills" },
-        { name: "Proyectos", href: "#projects", idTarget: "projects" },
-        { name: "Formación", href: "#formation", idTarget: "formation" },
-        { name: "EN", href: "/en", idTarget: "" }, // <-- nuevo item para inglés
+        { name: "Skills", href: "#skills", idTarget: "skills" },
+        { name: "Projects", href: "#projects", idTarget: "projects" },
+        { name: "Formation", href: "#formation", idTarget: "formation" },
+        { name: "ES", href: "/", idTarget: "" },
     ];
 
     let scrolled = false;
@@ -128,7 +128,7 @@
                 <button
                     on:click={scrollToTop}
                     class="text-xl sm:text-2xl font-header font-bold text-primary hover:text-secondary focus:outline-none"
-                    aria-label="Ir al inicio"
+                    aria-label="Go to top"
                 >
                     Nahuel N.
                 </button>
@@ -167,7 +167,7 @@
                     aria-controls="mobile-menu"
                     aria-expanded={openMobileMenu}
                 >
-                    <span class="sr-only">Abrir menú principal</span>
+                    <span class="sr-only">Open main menu</span>
                     {#if !openMobileMenu}
                         <svg
                             class="block h-6 w-6"
